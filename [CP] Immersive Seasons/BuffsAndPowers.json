@@ -1,0 +1,41 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				//---------------PRISMATIC CRYSTAL FRUIT--------------//
+				"{{ModId}}_Power.PrismaticCrystalFruit": {
+					"DisplayName": "{{i18n: }}",
+					"Description": "{{i18n: }}",
+					"TexturePath": "__",
+					/*
+					"TexturePosition": {
+						"X": 16,
+						"Y": 340
+					},
+					*/
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Mail.HadPrismaticCrystalFruit",
+					"CustomFields": null
+				},
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buffs",
+			"Entries": {
+				//---------------PRISMATIC CRYSTAL FRUIT--------------//
+				"{{ModId}}_Buff.PrismaticCrystalFruit": {
+					"DisplayName": "{{i18n: }}",
+					"Description": "{{i18n: }}",
+					"Duration": -2,
+					"IconTexture": "__",
+					"Effects": {
+						"ForagingLevel": 5,
+					}
+				}
+			}
+		},
+	]
+}
