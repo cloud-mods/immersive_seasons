@@ -1,0 +1,25 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				//---------------PRISMATIC CRYSTAL FRUIT--------------//
+				"{{ModId}}_Trigger.HadPrismaticCrystalFruit": {
+					"Id": "{{ModId}}_Trigger.HadPrismaticCrystalFruit",
+					"Trigger": "spacechase0.SpaceCore_OnItemEaten",
+					"Condition": "ITEM_ID Input (O){{ModId}}_Item.PrismaticCrystalFruit",
+					"Action": "AddMail {{ModId}}_Mail.HadPrismaticCrystalFruit",
+				},
+				"{{ModId}}_Trigger.PrismaticCrystalFruitPower": {
+					"Id": "{{ModId}}_Trigger.PrismaticCrystalFruitPower",
+					"Trigger": "spacechase0.SpaceCore_OnItemEaten",
+					"Condition": "PLAYER_HAS_MAIL current {{ModId}}_Mail.HadPrismaticCrystalFruit",
+					"Action": "AddBuff {{ModId}}_Buff.PrismaticCrystalFruit",
+					"MarkActionApplied": false,
+				},
+			}
+		},
+	]
+}

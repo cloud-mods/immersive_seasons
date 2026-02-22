@@ -1,0 +1,20 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Universal_Love"
+					],
+					"Value": "{{ModId}}_Item.PrismaticCrystalFruit",
+					"Delimiter": " " // if there are already values, add a space between them and the new one
+				}
+			]
+		},
+	]
+}

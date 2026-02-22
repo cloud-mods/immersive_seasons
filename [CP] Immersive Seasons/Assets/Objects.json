@@ -1,0 +1,39 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				//---------------PRISMATIC CRYSTAL FRUIT--------------//
+				"{{ModId}}_Item.PrismaticCrystalFruit": {
+					//basic info
+					"Name": "{{ModId}}_Item.PrismaticCrystalFruit",
+					"Type": "Basic",
+					"Category": -79,
+					"SpriteIndex": 0,
+					"DisplayName": "{{i18n: }}",
+					"Description": "{{i18n: }}",
+					"Texture": "Cornucopia.MoreCrops/Objects",
+					"Price": 20000,
+					"Edibility": 600,
+					//special shit
+					"ContextTags": [
+						"color_prismatic",
+						"prevent_loss_on_death",
+						"seedmaker_banned",
+					],
+					"CanBeTrashed": false,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					//buffs? okay I'll try //spacechase0.SpaceCore_OnItemEaten
+					"Buffs": [
+						{
+							"BuffId": "{{ModId}}_Buff.PrismaticCrystalFruit"
+						}
+					]
+				},
+			}
+		},
+	]
+}
