@@ -1,5 +1,5 @@
 # immersive_seasons
-it immersives your seasons
+it immersives your seasons!
 
 link to thread: https://discord.com/channels/137344473976799233/1475222272699666462
 
