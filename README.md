@@ -13,6 +13,5 @@ Mint
 Laurie,
 Kiki
 
-###
-I'll just snoop around a bit and then see
+### I'll just snoop around a bit and then see
 Unown
