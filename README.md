@@ -1,5 +1,6 @@
 # immersive_seasons
 it immersives your seasons
+link to thread: https://discord.com/channels/137344473976799233/1475222272699666462
 
 ## okay contributors- sorted by role- are (go ahead and edit your role/name if you want): 
 ### YES I shall assist to my fullest capacity
