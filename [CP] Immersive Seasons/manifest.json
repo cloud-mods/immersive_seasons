@@ -1,0 +1,23 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  //
+  "Name": "[CP] Immersive Seasons",
+  "Author": "uhhhh",
+  "Version": "0.0.0",
+  "Description": "TBD",
+  "UniqueID": "uhhhh.ImmersiveSeasons",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    //idk but prolly
+    {
+      "UniqueID": "mistyspring.ItemExtensions",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "IsRequired": true
+    }
+  ]
+}
