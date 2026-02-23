@@ -1,0 +1,44 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{ //SPAWNING GROUPS
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/SpawningGroups",
+			"Entries": {
+				"{{ModID}}_SpawnGroup.StormTotem": {
+					"SpawnablesToSpawn": [
+						{
+							"SpawnableIds": [
+								{
+									"Weight": 1.0,
+									"Value": "{{ModID}}_SpawnDef.StormTotem"
+								}
+							],
+							"Minimum": 1,
+							"Maximum": 5,
+						},
+					]
+				}
+			}
+		},
+		{ //SPAWN DEFINITIONS
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+			"Entries": {
+				"{{ModID}}_SpawnDef.StormTotem": {
+					"Type": "Forageable",
+					"Condition": "RANDOM .2",
+					"ForageableItemData": [
+						{
+							"Weight": 1.0,
+							"Value": {
+								"ItemId": "(O)__TBD_STORM_FORAGE__",
+							}
+						}
+					],
+					"ForageableExpiresWeekly": false,
+				},
+			}
+		},
+	]
+}

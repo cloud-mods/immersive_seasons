@@ -19,6 +19,17 @@
 					"Action": "AddBuff {{ModId}}_Buff.PrismaticCrystalFruit",
 					"MarkActionApplied": false,
 				},
+				//=====================================================================================================================================================//
+				//TOTEMS//
+				//=====================================================================================================================================================//
+				//---------------STORM TOTEM--------------//
+				"{{ModId}}_Trigger.StormTotem": {
+					"Id": "{{ModId}}_Trigger.StormTotem",
+					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+					"Condition": "ITEM_ID Input (O){{ModId}}_Item.StormTotem",
+					"Action": "WeatherForTomorrow Default Storm, spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.StormTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}",
+					"MarkActionApplied": false,
+				},
 			}
 		},
 	]
