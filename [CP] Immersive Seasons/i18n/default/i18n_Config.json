@@ -1,0 +1,45 @@
+{
+  //this file is for i18ns related to configs
+  "$schema": "https://smapi.io/schemas/i18n.json",
+  /* how it works:
+config.<name>.name	= The field name.
+config.<name>.description =	The field description (usually shown as a tooltip).
+config.<name>.values.<value> =	The display text for an AllowValues value when shown in a dropdown or checkbox list.
+config.section.<section>.name	= The section name.
+config.section.<section>.description =	The section description (usually shown as a tooltip).
+
+SO that means my (claude) fancy-ass formatting does not apply here </3
+
+
+andddd the copy-paste-able shit:
+
+"config.____enter_config_name_id____.name": "____enter_desired_config_name____",
+"config.____enter_config_name_id____.description": "____enter_desired_config_desc____",
+"config.____enter_config_name_id____.values.____enter_value_name_id____": "____enter_desired_config_value_name____",
+"config.section.____enter_section_name_id____.name": "____enter_desired_section_name____",
+"config.section.____enter_section_name_id____.description": "____enter_desired_section_desc____",
+
+sections:
+  "config.section.____enter_section_name_id____.name": "____enter_desired_section_name____",
+  "config.section.____enter_section_name_id____.description": "____enter_desired_section_desc____",
+
+  configs:
+  "config.____enter_config_name_id____.name": "____enter_desired_config_name____",
+  "config.____enter_config_name_id____.description": "____enter_desired_config_desc____",
+  "config.____enter_config_name_id____.values.____enter_value_name_id____": "____enter_desired_config_value_name____",
+
+
+
+//
+*/
+  //========//
+  //SECTIONS//
+  //========//
+
+  //==============//
+  //INDIV. CONFIGS//
+  //==============//
+  //--------------___section___--------------//
+
+  
+}
