@@ -27,7 +27,10 @@
 					"Id": "{{ModId}}_Trigger.StormTotem",
 					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
 					"Condition": "ITEM_ID Input (O){{ModId}}_Item.StormTotem",
-					"Action": "WeatherForTomorrow Default Storm, spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.StormTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}",
+					"Actios": [
+						"Spiderbuttons.BETAS_WeatherForTomorrow Default Storm",
+						"Spiderbuttons.BETAS_Lightning"
+					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.StormTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
 					"MarkActionApplied": false,
 				},
 			}

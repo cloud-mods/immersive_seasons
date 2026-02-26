@@ -1,6 +1,7 @@
 {
 	"$schema": "https://smapi.io/schemas/content-patcher.json",
 	"Changes": [
+		/* still too experimental to allow in yet :/
 		{ //SPAWNING GROUPS
 			"Action": "EditData",
 			"Target": "spacechase0.SpaceCore/SpawningGroups",
@@ -40,5 +41,6 @@
 				},
 			}
 		},
+		*/
 	]
 }

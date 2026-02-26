@@ -59,8 +59,8 @@
 					"Type": "Crafting",
 					"Category": 0,
 					"SpriteIndex": 0,
-					"DisplayName": "{{i18n: }}",
-					"Description": "{{i18n: }}",
+					"DisplayName": "{{i18n: i18n_Items.StormTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.StormTotem_Desc}}",
 					"Texture": "",
 					"Price": 40,
 					"Edibility": -300,
