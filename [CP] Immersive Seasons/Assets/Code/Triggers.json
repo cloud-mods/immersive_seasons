@@ -40,7 +40,8 @@
 					"Actions": [
 						"Spiderbuttons.BETAS_WeatherForTomorrow Default Storm",
 						"Spiderbuttons.BETAS_Lightning",
-						"IncrementStat {{ModId}}_Stat.StormTotemsUsed 1"
+						"IncrementStat {{ModId}}_Stat.StormTotemsUsed 1",
+						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.StormTotemUsed}}\" true"
 					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.StormTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
 					"MarkActionApplied": false,
 				},
