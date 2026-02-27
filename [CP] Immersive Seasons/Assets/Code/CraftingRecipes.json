@@ -1,0 +1,16 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				//=====================================================================================================================================================//
+				//TOTEMS//
+				//=====================================================================================================================================================//
+				"Rain Totem": "709 5 766 10/Field/681/false/s Foraging 4/", //5 hardwood 10 slime
+				"{{ModId}}_Recipe.StormTotem": "709 5 338 2 768 1/Field/{{ModId}}_Item.StormTotem/false/none/", // 5 hardwood 2 refined quartz and 1 solar essence, other unlcok
+			}
+		},
+	]
+}

@@ -5,6 +5,7 @@
 			"Action": "EditData",
 			"Target": "Data/TriggerActions",
 			"Entries": {
+				/* for immersive seasons, not totems
 				//---------------PRISMATIC CRYSTAL FRUIT--------------//
 				"{{ModId}}_Trigger.HadPrismaticCrystalFruit": {
 					"Id": "{{ModId}}_Trigger.HadPrismaticCrystalFruit",
@@ -19,19 +20,41 @@
 					"Action": "AddBuff {{ModId}}_Buff.PrismaticCrystalFruit",
 					"MarkActionApplied": false,
 				},
+				*/
 				//=====================================================================================================================================================//
 				//TOTEMS//
 				//=====================================================================================================================================================//
+				//---------------RAIN TOTEM--------------//
+				"{{ModId}}_Trigger.RainTotem": {
+					"Id": "{{ModId}}_Trigger.RainTotem",
+					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+					"Condition": "ITEM_ID Input (O)681",
+					"Action": "IncrementStat {{ModId}}_Stat.RainTotemsUsed 1",
+					"MarkActionApplied": false,
+				},
 				//---------------STORM TOTEM--------------//
 				"{{ModId}}_Trigger.StormTotem": {
 					"Id": "{{ModId}}_Trigger.StormTotem",
 					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
 					"Condition": "ITEM_ID Input (O){{ModId}}_Item.StormTotem",
-					"Actios": [
+					"Actions": [
 						"Spiderbuttons.BETAS_WeatherForTomorrow Default Storm",
-						"Spiderbuttons.BETAS_Lightning"
+						"Spiderbuttons.BETAS_Lightning",
+						"IncrementStat {{ModId}}_Stat.StormTotemsUsed 1"
 					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.StormTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
 					"MarkActionApplied": false,
+				},
+				//=====================================================================================================================================================//
+				//RECIPE UNLOCKS//
+				//=====================================================================================================================================================//
+				"{{ModId}}_Trigger.StormTotemUnlock": {
+					"Id": "{{ModId}}_Trigger.StormTotemUnlock",
+					"Trigger": "DayStarted",
+					"Condition": "{{ModId}}_Stat.RainTotemsUsed 5",
+					"Actions": [
+						"MarkCraftingRecipeKnown current {{ModId}}_Recipe.StormTotem",
+						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.StormTotemUnlock}}\" true"
+					]
 				},
 			}
 		},
