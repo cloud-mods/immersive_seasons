@@ -1,5 +1,5 @@
 {
-    //THE ONLY THING(S) THAT SHOULD BE ADDED/EDITED TO THIS FILE IS CONFIG, TOKENS, AND INCLUDE PATCHES
+    //THE ONLY THING(S) THAT SHOULD BE ADDED/EDITED TO THIS FILE IS CONFIG, TOKENS, IMAGE LOADERS, AND INCLUDE PATCHES
     "Format": "2.9.0",
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     /*
@@ -22,27 +22,29 @@
     ▀▀       ▀▀▀▀    ▀▀    ▀▀  ▀▀▀▀▀▀▀▀  ▀▀   ▀▀▀   ▀▀▀▀▀   
 */
     "DynamicTokens": [
-        {//season phase
+        /* for immersive seasons, not totems
+        { //season phase
             "Name": "Phase",
             "Value": "Early",
             "When": {
                 "Day": "{{Range: 1, 7}}",
             },
         },
-        {//season phase
+        { //season phase
             "Name": "Phase",
             "Value": "Mid",
             "When": {
                 "Day": "{{Range: 8, 21}}",
             },
         },
-        {//season phase
+        { //season phase
             "Name": "Phase",
             "Value": "Late",
             "When": {
                 "Day": "{{Range: 22, 28}}",
             },
         },
+        */
     ],
     "Changes": [
         /*
@@ -54,30 +56,53 @@
   ▄▄██▄▄   ██   ███   ██▄▄▄▄█  ██▄▄▄▄▄▄  ▀██▄▄██▀  ██▄▄▄██   ██▄▄▄▄▄▄ 
   ▀▀▀▀▀▀   ▀▀   ▀▀▀     ▀▀▀▀   ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀▀▀▀     ▀▀▀▀▀▀▀▀ 
 */
+        /* for immersive seasons, not totems
         { //BUFFS + POWERS
             "LogName": "Buffs and Powers",
             "Action": "Include",
-            "FromFile": "BuffsAndPowers.json"
+            "FromFile": "Assets/Code/BuffsAndPowers.json"
         },
         { //FORAGE
             "LogName": "Forage",
             "Action": "Include",
-            "FromFile": "Forage.json"
+            "FromFile": "Assets/Code/Forage.json"
         },
         { //GIFTS
             "LogName": "Gifts",
             "Action": "Include",
-            "FromFile": "Gifts.json"
+            "FromFile": "Assets/Code/Gifts.json"
+        },
+        */
+        { // CRAFTING RECIPES
+            "LogName": "Crafting Recipes",
+            "Action": "Include",
+            "FromFile": "Assets/Code/CraftingRecipes.json"
         },
         { //OBJECTS
             "LogName": "Objects",
             "Action": "Include",
-            "FromFile": "Objects.json"
+            "FromFile": "Assets/Code/Objects.json"
         },
+        /* too shitty to allow in yet :/
+        { //SPAWNS
+            "LogName": "Spawns",
+            "Action": "Include",
+            "FromFile": "Assets/Code/Spawns.json"
+        },
+        */
         { //TRIGGERS
             "LogName": "Triggers",
             "Action": "Include",
-            "FromFile": "Triggers.json"
+            "FromFile": "Assets/Code/Triggers.json"
         },
+        /*
+ ▄▄          ▄▄▄▄       ▄▄     ▄▄▄▄▄    
+ ██         ██▀▀██     ████    ██▀▀▀██  
+ ██        ██    ██    ████    ██    ██ 
+ ██        ██    ██   ██  ██   ██    ██ 
+ ██        ██    ██   ██████   ██    ██ 
+ ██▄▄▄▄▄▄   ██▄▄██   ▄██  ██▄  ██▄▄▄██  
+ ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀    ▀▀  ▀▀▀▀▀    
+        */
     ]
 }
