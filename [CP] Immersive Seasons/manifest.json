@@ -2,10 +2,10 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   //
   "Name": "[CP] More Totems",
-  "Author": "uhhhh",
+  "Author": "HeadInTheClouds and Luminte",
   "Version": "0.0.1",
   "Description": "TBD",
-  "UniqueID": "uhhhh.MoreTotems",
+  "UniqueID": "HeadInTheCloudsxLuminte.MoreTotems",
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
