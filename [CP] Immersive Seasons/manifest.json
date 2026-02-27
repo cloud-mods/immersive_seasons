@@ -1,18 +1,18 @@
 {
   "$schema": "https://smapi.io/schemas/manifest.json",
   //
-  "Name": "[CP] Immersive Seasons",
+  "Name": "[CP] More Totems",
   "Author": "uhhhh",
-  "Version": "0.0.0",
+  "Version": "0.0.1",
   "Description": "TBD",
-  "UniqueID": "uhhhh.ImmersiveSeasons",
+  "UniqueID": "uhhhh.MoreTotems",
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
   "Dependencies": [
     //idk but prolly
     {
-      "UniqueID": "mistyspring.ItemExtensions",
+      "UniqueID": "Spiderbuttons.BETAS",
       "IsRequired": true
     },
     {
