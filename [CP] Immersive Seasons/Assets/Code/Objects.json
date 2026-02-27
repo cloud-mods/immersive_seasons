@@ -78,6 +78,29 @@
 					"ExcludeFromShippingCollection": false,
 					"ExcludeFromRandomSale": true,
 				},
+				//---------------SUN TOTEM--------------//
+				"{{ModId}}_Item.SunTotem": {
+					//basic info
+					"Name": "{{ModId}}_Item.SunTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 2,
+					"DisplayName": "{{i18n: i18n_Items.SunTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.SunTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					//special shit
+					"ContextTags": [
+						//positive
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+				},
 			}
 		},
 		/*
@@ -104,7 +127,11 @@
 				"{{ModId}}_Item.StormTotem": {
 					"UseForTriggerAction": true,
 					"ConsumeForTriggerAction": true,
-				}
+				},
+				"{{ModId}}_Item.SunTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+				},
 			},
 		}
 	]
