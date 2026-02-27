@@ -3,4 +3,5 @@
   "i18n_Items.StormTotem_Name": "Rainstorm Totem",
   "i18n_Items.StormTotem_Desc": "Activate to greatly increase the chance for a rainstorm to occur tomorrow. Consumed on use.",
   "i18n_String.StormTotemUnlock": "You learned how to make a Storm Totem!",
+  "i18n_String.StormTotemUsed": "Dark clouds gather in the distance...",
 }
