@@ -77,6 +77,9 @@
 					"CanBeTrashed": true,
 					"ExcludeFromShippingCollection": false,
 					"ExcludeFromRandomSale": true,
+					"CustomFields":{
+						 "leclair.cloudyskies/WeatherTotem": "Storm"
+					}
 				},
 				//---------------SUN TOTEM--------------//
 				"{{ModId}}_Item.SunTotem": {
@@ -84,7 +87,7 @@
 					"Name": "{{ModId}}_Item.SunTotem",
 					"Type": "Crafting",
 					"Category": 0,
-					"SpriteIndex": 2,
+					"SpriteIndex": 1,
 					"DisplayName": "{{i18n: i18n_Items.SunTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
 					"Description": "{{i18n: i18n_Items.SunTotem_Desc}}",
 					"Texture": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
@@ -100,6 +103,9 @@
 					"CanBeTrashed": true,
 					"ExcludeFromShippingCollection": false,
 					"ExcludeFromRandomSale": true,
+					"CustomFields":{
+						 "leclair.cloudyskies/WeatherTotem": "Sun"
+					}
 				},
 			}
 		},
@@ -197,4 +203,5 @@ ConsumeForTriggerAction - If the above field is true, this will control if the i
 GiftableToNpcDisallowList - A dictionary of NPC names to messages that should show when you try to gift the item to them, instead of them receiving the gift.
 GiftableToNpcAllowList - A dictionary of NPC names to true for if you want that NPC allowed. If set, any NPCs not listed here will not be able to receive the gift, and instead will show the message from the following field.
 GiftedToNotOnAllowListMessage - The message to show for when the item is gifted to someone not on the allow list. Required if GiftableToNpcAllowList is set. (The disallow list is checked first, so you can still allow specific responses by certain NPCs.)
+
 */
