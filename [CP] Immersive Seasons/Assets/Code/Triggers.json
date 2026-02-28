@@ -50,7 +50,6 @@
 					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
 					"Condition": "ITEM_ID Input (O){{ModId}}_Item.SunTotem",
 					"Actions": [
-						"Spiderbuttons.BETAS_WeatherForTomorrow Default Sun",
 						"IncrementStat {{ModId}}_Stat.SunTotemsUsed 1",
 						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.SunTotemUsed}}\" true"
 					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.SunTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
@@ -73,3 +72,4 @@
 	]
 
 }
+
