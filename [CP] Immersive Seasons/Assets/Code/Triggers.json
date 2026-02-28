@@ -38,7 +38,6 @@
 					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
 					"Condition": "ITEM_ID Input (O){{ModId}}_Item.StormTotem",
 					"Actions": [
-						"Spiderbuttons.BETAS_WeatherForTomorrow Default Storm",
 						"Spiderbuttons.BETAS_Lightning",
 						"IncrementStat {{ModId}}_Stat.StormTotemsUsed 1",
 						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.StormTotemUsed}}\" true"
@@ -72,4 +71,5 @@
 			}
 		},
 	]
+
 }
