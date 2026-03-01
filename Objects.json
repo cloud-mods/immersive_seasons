@@ -1,0 +1,204 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				/* for immersive seasons, not totems
+			//=====================================================================================================================================================//
+			//FORAGE//
+			//=====================================================================================================================================================//
+
+				//---------------PRISMATIC CRYSTAL FRUIT--------------//
+				"{{ModId}}_Item.PrismaticCrystalFruit": {
+					//basic info
+					"Name": "{{ModId}}_Item.PrismaticCrystalFruit",
+					"Type": "Basic",
+					"Category": -79,
+					"SpriteIndex": 0,
+					"DisplayName": "{{i18n: }}",
+					"Description": "{{i18n: }}",
+					"Texture": "",
+					"Price": 20000,
+					"Edibility": 600,
+					//special shit
+					"ContextTags": [
+						//positive
+						"color_prismatic",
+						"prevent_loss_on_death",
+						"seedmaker_banned",
+						"season_winter",
+						"forage_item",
+						"fruit_item",
+						//negative
+						"!jelly_item",
+						"!juice_item",
+						"!pickle_item",
+						"!wine_item",
+						"!preserves_jelly",
+						"!preserves_pickle",
+						"!keg_juice",
+						"!keg_wine",
+					],
+					"CanBeTrashed": false,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					//buffs? okay I'll try //spacechase0.SpaceCore_OnItemEaten
+					"Buffs": [
+						{
+							"BuffId": "{{ModId}}_Buff.PrismaticCrystalFruit"
+						}
+					]
+				},
+				*/
+				//=====================================================================================================================================================//
+				//TOTEMS//
+				//=====================================================================================================================================================//
+				//---------------STORM TOTEM--------------//
+				"{{ModId}}_Item.StormTotem": {
+					//basic info
+					"Name": "{{ModId}}_Item.StormTotem",
+					"Type": "Crafting",
+					"Category": -8,
+					"SpriteIndex": 0,
+					"DisplayName": "{{i18n: i18n_Items.StormTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.StormTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
+					"Price": 40,
+					"Edibility": 0,
+					//special shit
+					"ContextTags": [
+						//positive
+						"color_yellow",
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
+				},
+				//---------------SUN TOTEM--------------//
+				"{{ModId}}_Item.SunTotem": {
+					//basic info
+					"Name": "{{ModId}}_Item.SunTotem",
+					"Type": "Crafting",
+					"Category": -8,
+					"SpriteIndex": 1,
+					"DisplayName": "{{i18n: i18n_Items.SunTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.SunTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
+					"Price": 40,
+					"Edibility": 0,
+					//special shit
+					"ContextTags": [
+						//positive
+						"color_dark_yellow",
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					//"CustomFields": "mistyspring.ItemExtensions/EatingAnimation"
+				},
+			}
+		},
+		/*
+		▄▄▄  ▄▄▄    ▄▄▄▄    ▄▄▄▄▄               ▄▄▄▄▄        ▄▄     ▄▄▄▄▄▄▄▄     ▄▄    
+		███  ███   ██▀▀██   ██▀▀▀██             ██▀▀▀██     ████    ▀▀▀██▀▀▀    ████   
+		████████  ██    ██  ██    ██            ██    ██    ████       ██       ████   
+		██ ██ ██  ██    ██  ██    ██            ██    ██   ██  ██      ██      ██  ██  
+		██ ▀▀ ██  ██    ██  ██    ██            ██    ██   ██████      ██      ██████  
+		██    ██   ██▄▄██   ██▄▄▄██             ██▄▄▄██   ▄██  ██▄     ██     ▄██  ██▄ 
+		▀▀    ▀▀    ▀▀▀▀    ▀▀▀▀▀               ▀▀▀▀▀     ▀▀    ▀▀     ▀▀     ▀▀    ▀▀ 
+*/
+		{ //SPACECORE OBJECT DATA
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/ObjectExtensionData",
+			"Entries": {
+				//=====================================================================================================================================================//
+				//TOTEMS//
+				//=====================================================================================================================================================//
+				"681": { //rain totem
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "227, 109, 103, 255",
+				},
+				"{{ModId}}_Item.StormTotem": {
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": true,
+				},
+				"{{ModId}}_Item.SunTotem": {
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": true,
+				},
+			},
+		}
+	]
+}
+/* spacecore shit for ref
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/ObjectExtensionData",
+			"Entries": {
+"item_id":{
+
+
+
+"CategoryTextOverride": "",
+"CategoryColorOverride": "",
+"CanBeTrashed": bool,
+"CanBeShipped": bool,
+"EatenHealthRestoredOverride": 0,
+"EatenStaminaRestoredOverride": 0,
+"MaxStackSizeOverride": 0,
+"ConsumedOnUse": bool,
+"UseForTriggerAction": bool,
+"ConsumeForTriggerAction": bool,
+"GiftableToNpcDisallowList": "A dictionary of NPC names to messages that should show when you try to gift the item to them, instead of them receiving the gift."
+"GiftableToNpcAllowList": "A dictionary of NPC names to true for if you want that NPC allowed. If set, any NPCs not listed here will not be able to receive the gift, and instead will show the message from the following field."
+"GiftedToNotOnAllowListMessage": "",
+
+"TotemWarp" - allow a custom object to act as a warp totem, an object containing the following properties:
+"Location" - string, the location to warp to - ex. "CommunityCenter"
+"Position" - Vector2, the tile to warp to - ex. "25, 15"
+"Color" - Color, the color the screen should flash - ex. { "R": 0, "G": 0, "B": 255, "A": 255 }
+
+}
+
+			},
+			}
+		},
+
+
+
+
+
+
+
+
+
+Vanilla Asset Expansions
+Objects - These are in the asset spacechase0.SpaceCore/ObjectExtensionData, which is a dictionary with the key being an object's unqualified item ID, and the value being an object containing the following fields:
+CategoryTextOverride - string, default null (no override)
+CategoryColorOverride - same format as Json Assets colors, default null (no override)
+CanBeTrashed - true/false, also prevents dropping, default true
+CanBeShipped - true/false, default true
+EatenHealthRestoredOverride - integer, override how much health is restored on eating this item, default null (use vanilla method of calculation)
+EatenStaminaRestoredOverride - integer, override how much stamina is restored on eating this item, default null (use vanilla method of calculation)
+MaxStackSizeOverride - integer, override the max stack size of your item, default null (use vanilla amount)
+TotemWarp - allow a custom object to act as a warp totem, an object containing the following properties:
+Location - string, the location to warp to - ex. "CommunityCenter"
+Position - Vector2, the tile to warp to - ex. "25, 15"
+Color - Color, the color the screen should flash - ex. { "R": 0, "G": 0, "B": 255, "A": 255 }
+ConsumedOnUse - bool, default true
+UseForTriggerAction - True to run a trigger action upon use, false otherwise. Default false.
+ConsumeForTriggerAction - If the above field is true, this will control if the item is consumed on use. Default false for backwards compatibility.
+GiftableToNpcDisallowList - A dictionary of NPC names to messages that should show when you try to gift the item to them, instead of them receiving the gift.
+GiftableToNpcAllowList - A dictionary of NPC names to true for if you want that NPC allowed. If set, any NPCs not listed here will not be able to receive the gift, and instead will show the message from the following field.
+GiftedToNotOnAllowListMessage - The message to show for when the item is gifted to someone not on the allow list. Required if GiftableToNpcAllowList is set. (The disallow list is checked first, so you can still allow specific responses by certain NPCs.)
+
+*/
