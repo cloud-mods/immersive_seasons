@@ -1,0 +1,15 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+        {
+            "LogName": "Events",
+            "Action": "EditData",
+            "Target": "Data/Events/{{LocationUniqueName}}",
+            "Entries": {
+                "{{ModId}}_Event.RainTotem": "",
+            }
+        },
+
+
+	]
+}
