@@ -1,7 +1,21 @@
 {
   "$schema": "https://smapi.io/schemas/i18n.json",
-  "i18n_Items.StormTotem_Name": "Rainstorm Totem",
-  "i18n_Items.StormTotem_Desc": "Activate to greatly increase the chance for a rainstorm to occur tomorrow. Consumed on use.",
+  "i18n_Items.StormTotem_Name": "Thunderstorm Totem",
+  "i18n_Items.StormTotem_Desc": "Activate to greatly increase the chance for a thunderstorm to occur tomorrow. Consumed on use.",
   "i18n_String.StormTotemUnlock": "You learned how to make a Storm Totem!",
   "i18n_String.StormTotemUsed": "Dark clouds gather in the distance...",
+  //
+  "i18n_Items.SunTotem_Name": "Sunshine Totem",
+  "i18n_Items.SunTotem_Desc": "Activate to greatly increase the chance of a sunny day tomorrow. Consumed on use.",
+  "i18n_String.SunTotemUsed": "A ray of sunshine glimmers in the distance...",
+  //
+  "i18n_Items.SnowTotem_Name": "Snow Totem",
+  "i18n_Items.SnowTotem_Desc": "Activate to greatly increase the chance for it to snow tomorrow. Consumed on use.",
+  "i18n_String.SnowTotemUsed": "You feel a chill in the air, and fluffy clouds gather in the distance...",
+  //
+  "i18n_Items.WindTotem_Name": "Wind Totem",
+  "i18n_Items.WindTotem_Desc": "Activate to greatly increase the chance of a windy day tomorrow. Consumed on use.",
+  "i18n_String.WindTotemUsed": "The breeze flutters around you, and a few stray leaves tumble from the treetops..",
+  //
+  "i18n_String.RainTotemUsed": "Clouds gather in the distance...",
 }
