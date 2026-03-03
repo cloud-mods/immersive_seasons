@@ -60,7 +60,6 @@
   ▄▄██▄▄   ██   ███   ██▄▄▄▄█  ██▄▄▄▄▄▄  ▀██▄▄██▀  ██▄▄▄██   ██▄▄▄▄▄▄ 
   ▀▀▀▀▀▀   ▀▀   ▀▀▀     ▀▀▀▀   ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀▀▀▀     ▀▀▀▀▀▀▀▀ 
 */
-        /* for immersive seasons, not totems
         { //BUFFS + POWERS
             "LogName": "Buffs and Powers",
             "Action": "Include",
@@ -76,7 +75,6 @@
             "Action": "Include",
             "FromFile": "Assets/Code/Gifts.json"
         },
-        */
         { // CRAFTING RECIPES
             "LogName": "Crafting Recipes",
             "Action": "Include",
@@ -112,6 +110,16 @@
             "Action": "Load",
             "Target": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
             "FromFile": "Assets/Images/WeatherTotems.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Assets/Images/Forage",
+            "FromFile": "Assets/Images/Forage.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Assets/Images/Buffs",
+            "FromFile": "Assets/Images/Buffs.png"
         },
     ]
 }
