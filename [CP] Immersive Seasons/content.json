@@ -45,6 +45,10 @@
             },
         },
         */
+        { //TOTEM NAME COLOR
+            "Name": "TotemNameColor",
+            "Value": "44, 32, 138", //just an RBG
+        },
     ],
     "Changes": [
         /*
@@ -104,11 +108,10 @@
  ██▄▄▄▄▄▄   ██▄▄██   ▄██  ██▄  ██▄▄▄██  
  ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀    ▀▀  ▀▀▀▀▀    
         */
-	{
-	  "Action": "Load",
-	  "Target": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
-	  "FromFile": "Assets/Images/WeatherTotems.png"
-	},
-
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
+            "FromFile": "Assets/Images/WeatherTotems.png"
+        },
     ]
 }
