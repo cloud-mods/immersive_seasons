@@ -77,8 +77,7 @@
 					"CanBeTrashed": true,
 					"ExcludeFromShippingCollection": false,
 					"ExcludeFromRandomSale": true,
-					"CustomFields": {
-					}
+					"CustomFields": {}
 				},
 				//---------------SUN TOTEM--------------//
 				"{{ModId}}_Item.SunTotem": {
@@ -102,8 +101,55 @@
 					"CanBeTrashed": true,
 					"ExcludeFromShippingCollection": false,
 					"ExcludeFromRandomSale": true,
-					"CustomFields": {
-					}
+					"CustomFields": {}
+				},
+				//---------------SNOW TOTEM--------------//
+				"{{ModId}}_Item.SnowTotem": {
+					//basic info
+					"Name": "{{ModId}}_Item.SnowTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 2,
+					"DisplayName": "{{i18n: i18n_Items.SnowTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.SnowTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					//special shit
+					"ContextTags": [
+						//positive
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
+				},
+				//---------------WIND TOTEM--------------//
+				"{{ModId}}_Item.WindTotem": {
+					//basic info
+					"Name": "{{ModId}}_Item.WindTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 3,
+					"DisplayName": "{{i18n: i18n_Items.WindTotem_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.WindTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					//special shit
+					"ContextTags": [
+						//positive
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
 				},
 			}
 		},
@@ -128,20 +174,35 @@
 					"UseForTriggerAction": true,
 					"ConsumeForTriggerAction": true,
 					"CategoryTextOverride": "Weather Totem",
-					"CategoryColorOverride": "44, 32, 138, 255",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
 				},
 				//---------------STORM TOTEM--------------//
 				"{{ModId}}_Item.StormTotem": {
 					"UseForTriggerAction": true,
 					"ConsumeForTriggerAction": true,
 					"CategoryTextOverride": "Weather Totem",
-					"CategoryColorOverride": "44, 32, 138, 255",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
 				},
+				//---------------SUN TOTEM--------------//
 				"{{ModId}}_Item.SunTotem": {
 					"UseForTriggerAction": true,
 					"ConsumeForTriggerAction": true,
 					"CategoryTextOverride": "Weather Totem",
-					"CategoryColorOverride": "44, 32, 138, 255",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+				//---------------SNOW TOTEM--------------//
+				"{{ModId}}_Item.SnowTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+				//---------------WIND TOTEM--------------//
+				"{{ModId}}_Item.WindTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
 				},
 			},
 		}

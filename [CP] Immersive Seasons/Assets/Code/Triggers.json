@@ -52,7 +52,7 @@
 					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.StormTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
 					"MarkActionApplied": false,
 				},
-				//---------------STORM TOTEM--------------//
+				//---------------SUN TOTEM--------------//
 				"{{ModId}}_Trigger.SunTotem": {
 					"Id": "{{ModId}}_Trigger.SunTotem",
 					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
@@ -62,6 +62,30 @@
 						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.SunTotemUsed}}\" true",
 						"Spiderbuttons.BETAS_WeatherForTomorrow default Sun"
 					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.SunTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
+					"MarkActionApplied": false,
+				},
+				//---------------SNOW TOTEM--------------//
+				"{{ModId}}_Trigger.SnowTotem": {
+					"Id": "{{ModId}}_Trigger.SnowTotem",
+					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+					"Condition": "ITEM_ID Input (O){{ModId}}_Item.SnowTotem",
+					"Actions": [
+						"IncrementStat {{ModId}}_Stat.SnowTotemsUsed 1",
+						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.SnowTotemUsed}}\" true",
+						"Spiderbuttons.BETAS_WeatherForTomorrow default Snow"
+					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.SnowTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
+					"MarkActionApplied": false,
+				},
+				//---------------WIND TOTEM--------------//
+				"{{ModId}}_Trigger.WindTotem": {
+					"Id": "{{ModId}}_Trigger.WindTotem",
+					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+					"Condition": "ITEM_ID Input (O){{ModId}}_Item.WindTotem",
+					"Actions": [
+						"IncrementStat {{ModId}}_Stat.WindTotemsUsed 1",
+						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.WindTotemUsed}}\" true",
+						"Spiderbuttons.BETAS_WeatherForTomorrow default Wind"
+					], // for when i decide I'm ready for spacecore spawing- spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup.WindTotem {{Random: Woods, Forest, Mountain, Beach, {{LocationName}}}}
 					"MarkActionApplied": false,
 				},
 				//=====================================================================================================================================================//
