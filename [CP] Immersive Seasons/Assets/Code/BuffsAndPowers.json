@@ -7,9 +7,9 @@
 			"Entries": {
 				//---------------PRISMATIC CRYSTAL FRUIT--------------//
 				"{{ModId}}_Power.PrismaticCrystalFruit": {
-					"DisplayName": "{{i18n: }}",
-					"Description": "{{i18n: }}",
-					"TexturePath": "__",
+					"DisplayName": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Name}}",
+					"Description": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Desc}}",
+					"TexturePath": "Mods/{{ModId}}/Assets/Images/Buffs",
 					/*
 					"TexturePosition": {
 						"X": 16,
@@ -27,10 +27,10 @@
 			"Entries": {
 				//---------------PRISMATIC CRYSTAL FRUIT--------------//
 				"{{ModId}}_Buff.PrismaticCrystalFruit": {
-					"DisplayName": "{{i18n: }}",
-					"Description": "{{i18n: }}",
+					"DisplayName": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Name}}",
+					"Description": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Desc}}",
 					"Duration": -2,
-					"IconTexture": "__",
+					"IconTexture": "Mods/{{ModId}}/Assets/Images/Buffs",
 					"Effects": {
 						"ForagingLevel": 5,
 					}

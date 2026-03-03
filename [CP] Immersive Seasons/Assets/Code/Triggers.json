@@ -5,22 +5,25 @@
 			"Action": "EditData",
 			"Target": "Data/TriggerActions",
 			"Entries": {
-				/* for immersive seasons, not totems
 				//---------------PRISMATIC CRYSTAL FRUIT--------------//
 				"{{ModId}}_Trigger.HadPrismaticCrystalFruit": {
 					"Id": "{{ModId}}_Trigger.HadPrismaticCrystalFruit",
 					"Trigger": "spacechase0.SpaceCore_OnItemEaten",
 					"Condition": "ITEM_ID Input (O){{ModId}}_Item.PrismaticCrystalFruit",
-					"Action": "AddMail {{ModId}}_Mail.HadPrismaticCrystalFruit",
+					"Actions": [
+						"AddMail current {{ModId}}_Mail.HadPrismaticCrystalFruit received",
+						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.PrismaticCrystalFruitEaten}}\" true",
+						"Spiderbuttons.BETAS_PlaySound stardrop",
+					],
+					"MarkActionApplied": false, //REMOVE THIS LATER, MAKE INEDIBLE AFTER FIRST CONSUMPTION
 				},
 				"{{ModId}}_Trigger.PrismaticCrystalFruitPower": {
 					"Id": "{{ModId}}_Trigger.PrismaticCrystalFruitPower",
-					"Trigger": "spacechase0.SpaceCore_OnItemEaten",
+					"Trigger": "DayStarted",
 					"Condition": "PLAYER_HAS_MAIL current {{ModId}}_Mail.HadPrismaticCrystalFruit",
-					"Action": "AddBuff {{ModId}}_Buff.PrismaticCrystalFruit",
+					"Action": "AddBuff {{ModId}}_Buff.PrismaticCrystalFruit -2",
 					"MarkActionApplied": false,
 				},
-				*/
 				//=====================================================================================================================================================//
 				//TOTEMS//
 				//=====================================================================================================================================================//
@@ -34,7 +37,6 @@
 						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.RainTotemUsed}}\" true",
 						"Spiderbuttons.BETAS_PlaySound rainsound true",
 						"Spiderbuttons.BETAS_WeatherForTomorrow default Rain",
-
 						//"spacechase0.SpaceCore_PlayEvent eventid"
 					],
 					"MarkActionApplied": false,
@@ -94,7 +96,7 @@
 				"{{ModId}}_Trigger.StormTotemUnlock": {
 					"Id": "{{ModId}}_Trigger.StormTotemUnlock",
 					"Trigger": "DayStarted",
-					"Condition": "{{ModId}}_Stat.RainTotemsUsed 5",
+					"Condition": "PLAYER_STAT current {{ModId}}_Stat.RainTotemsUsed 5",
 					"Actions": [
 						"MarkCraftingRecipeKnown current {{ModId}}_Recipe.StormTotem",
 						"Spiderbuttons.BETAS_Message \"{{i18n: i18n_String.StormTotemUnlock}}\" true"

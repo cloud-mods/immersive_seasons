@@ -5,7 +5,6 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				/* for immersive seasons, not totems
 			//=====================================================================================================================================================//
 			//FORAGE//
 			//=====================================================================================================================================================//
@@ -17,9 +16,9 @@
 					"Type": "Basic",
 					"Category": -79,
 					"SpriteIndex": 0,
-					"DisplayName": "{{i18n: }}",
-					"Description": "{{i18n: }}",
-					"Texture": "",
+					"DisplayName": "{{i18n: i18n_Items.PrismaticCrystalFruit_Name}}", //format is 'i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>'
+					"Description": "{{i18n: i18n_Items.PrismaticCrystalFruit_Desc}}",
+					"Texture": "Mods/{{ModId}}/Assets/Images/Forage",
 					"Price": 20000,
 					"Edibility": 600,
 					//special shit
@@ -44,14 +43,13 @@
 					"CanBeTrashed": false,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					//buffs? okay I'll try //spacechase0.SpaceCore_OnItemEaten
 					"Buffs": [
 						{
-							"BuffId": "{{ModId}}_Buff.PrismaticCrystalFruit"
+							"BuffId": "{{ModId}}_Buff.PrismaticCrystalFruit",
+							"Duration": -2
 						}
 					]
 				},
-				*/
 				//=====================================================================================================================================================//
 				//TOTEMS//
 				//=====================================================================================================================================================//
