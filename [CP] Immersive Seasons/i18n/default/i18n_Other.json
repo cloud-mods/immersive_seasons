@@ -1,5 +1,10 @@
 {
   "$schema": "https://smapi.io/schemas/i18n.json",
+  //
+  "i18n_Items.PrismaticCrystalFruit_Name": "Prismatic Crystal Fruit",
+  "i18n_Items.PrismaticCrystalFruit_Desc": "It's unlike any plant you've ever seen.",
+  "i18n_String.PrismaticCrystalFruitEaten": "uhhh placeholder text but yeah you're great at farming now yipee",
+  //
   "i18n_Items.StormTotem_Name": "Thunderstorm Totem",
   "i18n_Items.StormTotem_Desc": "Activate to greatly increase the chance for a thunderstorm to occur tomorrow. Consumed on use.",
   "i18n_String.StormTotemUnlock": "You learned how to make a Storm Totem!",
@@ -18,4 +23,7 @@
   "i18n_String.WindTotemUsed": "The breeze flutters around you, and a few stray leaves tumble from the treetops..",
   //
   "i18n_String.RainTotemUsed": "Clouds gather in the distance...",
+  //
+  "i18n_String.PrismaticCrystalFruitPower_Name": "Prismatic Crystal Fruit Power",
+  "i18n_String.PrismaticCrystalFruitPower_Desc": "Adds 5 levels of farming experience.",
 }
