@@ -1,0 +1,23 @@
+{
+	"Format": "2.9.0",
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// --- Secret Woods ---
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [
+				"Woods",
+				"Forage"
+			],
+			"Entries": {
+				// --- Prismatic Crystal Fruit ---
+				"(O){{ModId}}_Forage.PrismaticCrystalFruit": {
+					"ItemId": "(O){{ModId}}_Item.PrismaticCrystalFruit",
+					"Condition": "SEASON winter",
+					"Chance": 0.001,
+				},
+			}
+		},
+	]
+}

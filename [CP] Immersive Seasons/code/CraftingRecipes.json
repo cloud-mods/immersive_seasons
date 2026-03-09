@@ -1,0 +1,18 @@
+{
+	"Format": "2.9.0",
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				// --- Totems ---
+				"Rain Totem": "709 5 766 10/Field/681/false/s Foraging 4/", // 5 Hardwood, 10 Slime, Foraging Level 4
+				"{{ModId}}_Recipe.StormTotem": "709 5 338 2 768 1/Field/{{ModId}}_Item.StormTotem/false/none/", // 5 Hardwood, 2 Refined Quartz, 1 Solar Essence
+				"{{ModId}}_Recipe.SunTotem": "709 5 93 1 768 1/Field/{{ModId}}_Item.SunTotem/false/s Foraging 4/", // 5 Hardwood, 1 Torch, 1 Solar Essence, Foraging Level 4
+				"{{ModId}}_Recipe.SnowTotem": "709 5 84 3/Field/{{ModId}}_Item.SnowTotem/false/s Foraging 8/", // 5 Hardwood, 3 Frozen Tear, Foraging Level 8
+				"{{ModId}}_Recipe.WindTotem": "709 5 872 1/Field/{{ModId}}_Item.WindTotem/false/s Foraging 8/", // 5 Hardwood, 1 Fairy Dust, Foraging Level 8
+			}
+		},
+	]
+}

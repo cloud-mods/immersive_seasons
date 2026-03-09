@@ -1,21 +1,38 @@
-# immersive_seasons
-it immersives your seasons!
+# 🍂 Immersive Seasons ❄️
+> *Making every season feel like it should.*
 
-link to discord thread: https://discord.com/channels/137344473976799233/1475222272699666462
+`immersive_seasons` is a project dedicated to deepening the environmental experience of your game world through dynamic, atmospheric seasonal changes.
 
-link to google sheets: https://docs.google.com/spreadsheets/d/1v-WH60_X-fP4EQsfDUefQ5qx54Sbqaa3TmQGJwrOGPg/edit?usp=sharing
+## 🔗 Project Links
+*   **Join the Conversation:** [Discord Thread](https://discord.com)
+*   **Project Tracking:** [Google Sheets](https://docs.google.com)
 
-## okay contributors- sorted by role- are (go ahead and edit your role/name if you want): 
-### YES I shall assist to my fullest capacity
-Claude,
-Mailia
+---
 
-### sure I'll pitch in!
-Mint
+## 🤝 Contributors
+*If you're on this list, feel free to update your name or move yourself to a different tier!*
 
-### I can do like 1 or 2 things
-Laurie,
-Kiki
+### 🚀 Lead Contributors
+*I can assist with most things!*
+*   Claude
+*   Mailia
+*   Lucy
 
-### I'll just snoop around a bit and then see
-Unown
+### 🛠️ Active Helpers
+*Sure, I'll pitch in!*
+*   Mint
+
+### 🌿 Casual Contributors
+*I can do a thing or two!*
+*   Laurie
+*   Kiki
+
+### 🔍 Observers
+*Just snooping around for now...*
+*   Unown
+
+## 📁 Directory Structure
+*   `assets/`: Contains all game assets like images used in the mod.
+*   `code/`: Contains all the JSON Content Patcher data files that define the mod's logic (e.g., objects, buffs, spawns).
+*   `i18n/`: Contains translation files for internationalization support.
+*   `misc/`: A place for raw development files and uncompiled assets, such as Aseprite files and blank templates.

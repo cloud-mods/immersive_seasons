@@ -1,26 +1,10 @@
 {
-    //THE ONLY THING(S) THAT SHOULD BE ADDED/EDITED TO THIS FILE IS CONFIG, TOKENS, IMAGE LOADERS, AND INCLUDE PATCHES
+    // Note: Edit only Config, DynamicTokens, Include Actions, and Load Actions.
     "Format": "2.9.0",
     "$schema": "https://smapi.io/schemas/content-patcher.json",
-    /*
-    ▄▄▄▄     ▄▄▄▄    ▄▄▄   ▄▄  ▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄      ▄▄▄▄  
-  ██▀▀▀▀█   ██▀▀██   ███   ██  ██▀▀▀▀▀▀   ▀▀██▀▀    ██▀▀▀▀█ 
- ██▀       ██    ██  ██▀█  ██  ██           ██     ██       
- ██        ██    ██  ██ ██ ██  ███████      ██     ██  ▄▄▄▄ 
- ██▄       ██    ██  ██  █▄██  ██           ██     ██  ▀▀██ 
-  ██▄▄▄▄█   ██▄▄██   ██   ███  ██         ▄▄██▄▄    ██▄▄▄██ 
-    ▀▀▀▀     ▀▀▀▀    ▀▀   ▀▀▀  ▀▀         ▀▀▀▀▀▀      ▀▀▀▀  
-*/
+    // --- Configuration ---
     "ConfigSchema": {},
-    /*
- ▄▄▄▄▄▄▄▄    ▄▄▄▄    ▄▄   ▄▄▄  ▄▄▄▄▄▄▄▄  ▄▄▄   ▄▄    ▄▄▄▄   
- ▀▀▀██▀▀▀   ██▀▀██   ██  ██▀   ██▀▀▀▀▀▀  ███   ██  ▄█▀▀▀▀█  
-    ██     ██    ██  ██▄██     ██        ██▀█  ██  ██▄      
-    ██     ██    ██  █████     ███████   ██ ██ ██   ▀████▄  
-    ██     ██    ██  ██  ██▄   ██        ██  █▄██       ▀██ 
-    ██      ██▄▄██   ██   ██▄  ██▄▄▄▄▄▄  ██   ███  █▄▄▄▄▄█▀ 
-    ▀▀       ▀▀▀▀    ▀▀    ▀▀  ▀▀▀▀▀▀▀▀  ▀▀   ▀▀▀   ▀▀▀▀▀   
-*/
+    // --- Dynamic Tokens ---
     "DynamicTokens": [
         /* for immersive seasons, not totems
         { //season phase
@@ -45,81 +29,66 @@
             },
         },
         */
-        { //TOTEM NAME COLOR
+        { // Totem Name Color
             "Name": "TotemNameColor",
-            "Value": "44, 32, 138", //just an RBG
+            "Value": "44, 32, 138" // RGB Value
         },
     ],
     "Changes": [
-        /*
-  ▄▄▄▄▄▄   ▄▄▄   ▄▄     ▄▄▄▄   ▄▄        ▄▄    ▄▄  ▄▄▄▄▄     ▄▄▄▄▄▄▄▄ 
-  ▀▀██▀▀   ███   ██   ██▀▀▀▀█  ██        ██    ██  ██▀▀▀██   ██▀▀▀▀▀▀ 
-    ██     ██▀█  ██  ██▀       ██        ██    ██  ██    ██  ██       
-    ██     ██ ██ ██  ██        ██        ██    ██  ██    ██  ███████  
-    ██     ██  █▄██  ██▄       ██        ██    ██  ██    ██  ██       
-  ▄▄██▄▄   ██   ███   ██▄▄▄▄█  ██▄▄▄▄▄▄  ▀██▄▄██▀  ██▄▄▄██   ██▄▄▄▄▄▄ 
-  ▀▀▀▀▀▀   ▀▀   ▀▀▀     ▀▀▀▀   ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀▀▀▀     ▀▀▀▀▀▀▀▀ 
-*/
-        { //BUFFS + POWERS
+        // --- Included Patches ---
+        { // Buffs + Powers
             "LogName": "Buffs and Powers",
             "Action": "Include",
-            "FromFile": "Assets/Code/BuffsAndPowers.json"
+            "FromFile": "code/BuffsAndPowers.json"
         },
-        { //FORAGE
+        { // Forage
             "LogName": "Forage",
             "Action": "Include",
-            "FromFile": "Assets/Code/Forage.json"
+            "FromFile": "code/Forage.json"
         },
-        { //GIFTS
+        { // Gifts
             "LogName": "Gifts",
             "Action": "Include",
-            "FromFile": "Assets/Code/Gifts.json"
+            "FromFile": "code/Gifts.json"
         },
         { // CRAFTING RECIPES
             "LogName": "Crafting Recipes",
             "Action": "Include",
-            "FromFile": "Assets/Code/CraftingRecipes.json"
+            "FromFile": "code/CraftingRecipes.json"
         },
-        { //OBJECTS
+        { // Objects
             "LogName": "Objects",
             "Action": "Include",
-            "FromFile": "Assets/Code/Objects.json"
+            "FromFile": "code/Objects.json"
         },
-        /* too shitty to allow in yet :/
-        { //SPAWNS
+        /* 
+        TODO: Experimental, uncomment when ready
+        { // Spawns
             "LogName": "Spawns",
             "Action": "Include",
-            "FromFile": "Assets/Code/Spawns.json"
+            "FromFile": "code/Spawns.json"
         },
         */
-        { //TRIGGERS
+        { // Triggers
             "LogName": "Triggers",
             "Action": "Include",
-            "FromFile": "Assets/Code/Triggers.json"
+            "FromFile": "code/Triggers.json"
         },
-        /*
- ▄▄          ▄▄▄▄       ▄▄     ▄▄▄▄▄    
- ██         ██▀▀██     ████    ██▀▀▀██  
- ██        ██    ██    ████    ██    ██ 
- ██        ██    ██   ██  ██   ██    ██ 
- ██        ██    ██   ██████   ██    ██ 
- ██▄▄▄▄▄▄   ██▄▄██   ▄██  ██▄  ██▄▄▄██  
- ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀    ▀▀  ▀▀▀▀▀    
-        */
+        // --- Asset Image Loaders ---
         {
             "Action": "Load",
-            "Target": "Mods/{{ModId}}/Assets/Images/WeatherTotems",
-            "FromFile": "Assets/Images/WeatherTotems.png"
+            "Target": "Mods/{{ModId}}/assets/images/WeatherTotems",
+            "FromFile": "assets/images/WeatherTotems.png"
         },
         {
             "Action": "Load",
-            "Target": "Mods/{{ModId}}/Assets/Images/Forage",
-            "FromFile": "Assets/Images/Forage.png"
+            "Target": "Mods/{{ModId}}/assets/images/Forage",
+            "FromFile": "assets/images/Forage.png"
         },
         {
             "Action": "Load",
-            "Target": "Mods/{{ModId}}/Assets/Images/Buffs",
-            "FromFile": "Assets/Images/Buffs.png"
+            "Target": "Mods/{{ModId}}/assets/images/Buffs",
+            "FromFile": "assets/images/Buffs.png"
         },
     ]
 }

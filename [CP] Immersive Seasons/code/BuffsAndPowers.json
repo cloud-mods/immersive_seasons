@@ -1,0 +1,42 @@
+{
+	"Format": "2.9.0",
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				// --- Prismatic Crystal Fruit ---
+				"{{ModId}}_Power.PrismaticCrystalFruit": {
+					"DisplayName": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Name}}",
+					"Description": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Desc}}",
+					"TexturePath": "Mods/{{ModId}}/assets/images/Buffs",
+					/*
+					"TexturePosition": {
+						"X": 16,
+						"Y": 340
+					},
+					*/
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Mail.HadPrismaticCrystalFruit",
+					"CustomFields": null
+				},
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buffs",
+			"Entries": {
+				// --- Prismatic Crystal Fruit ---
+				"{{ModId}}_Buff.PrismaticCrystalFruit": {
+					"DisplayName": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Name}}",
+					"Description": "{{i18n: i18n_String.PrismaticCrystalFruitPower_Desc}}",
+					"Duration": -2,
+					"IconTexture": "Mods/{{ModId}}/assets/images/Buffs",
+					"Effects": {
+						"ForagingLevel": 5,
+					}
+				}
+			}
+		},
+	]
+}

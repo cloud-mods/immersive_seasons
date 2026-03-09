@@ -1,0 +1,194 @@
+{
+	"Format": "2.9.0",
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				// --- Forage ---
+				// Prismatic Crystal Fruit
+				"{{ModId}}_Item.PrismaticCrystalFruit": {
+					// Basic Info
+					"Name": "{{ModId}}_Item.PrismaticCrystalFruit",
+					"Type": "Basic",
+					"Category": -79,
+					"SpriteIndex": 0,
+					"DisplayName": "{{i18n: i18n_Items.PrismaticCrystalFruit_Name}}", // Format: i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>
+					"Description": "{{i18n: i18n_Items.PrismaticCrystalFruit_Desc}}",
+					"Texture": "Mods/{{ModId}}/assets/images/Forage",
+					"Price": 20000,
+					"Edibility": 600,
+					// Advanced Info
+					"ContextTags": [
+						// Positive Tags
+						"color_prismatic",
+						"prevent_loss_on_death",
+						"seedmaker_banned",
+						"season_winter",
+						"forage_item",
+						"fruit_item",
+						// Negative Tags
+						"!jelly_item",
+						"!juice_item",
+						"!pickle_item",
+						"!wine_item",
+						"!preserves_jelly",
+						"!preserves_pickle",
+						"!keg_juice",
+						"!keg_wine",
+					],
+					"CanBeTrashed": false,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Buffs": [
+						{
+							"BuffId": "{{ModId}}_Buff.PrismaticCrystalFruit",
+							"Duration": -2
+						}
+					]
+				},
+				// --- Totems ---
+				// Storm Totem
+				"{{ModId}}_Item.StormTotem": {
+					// Basic Info
+					"Name": "{{ModId}}_Item.StormTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 0,
+					"DisplayName": "{{i18n: i18n_Items.StormTotem_Name}}", // Format: i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>
+					"Description": "{{i18n: i18n_Items.StormTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/assets/images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					// Advanced Info
+					"ContextTags": [
+						// Positive Tags
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
+				},
+				// Sun Totem
+				"{{ModId}}_Item.SunTotem": {
+					// Basic Info
+					"Name": "{{ModId}}_Item.SunTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 1,
+					"DisplayName": "{{i18n: i18n_Items.SunTotem_Name}}", // Format: i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>
+					"Description": "{{i18n: i18n_Items.SunTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/assets/images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					// Advanced Info
+					"ContextTags": [
+						// Positive Tags
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
+				},
+				// Snow Totem
+				"{{ModId}}_Item.SnowTotem": {
+					// Basic Info
+					"Name": "{{ModId}}_Item.SnowTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 2,
+					"DisplayName": "{{i18n: i18n_Items.SnowTotem_Name}}", // Format: i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>
+					"Description": "{{i18n: i18n_Items.SnowTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/assets/images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					// Advanced Info
+					"ContextTags": [
+						// Positive Tags
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
+				},
+				// Wind Totem
+				"{{ModId}}_Item.WindTotem": {
+					// Basic Info
+					"Name": "{{ModId}}_Item.WindTotem",
+					"Type": "Crafting",
+					"Category": 0,
+					"SpriteIndex": 3,
+					"DisplayName": "{{i18n: i18n_Items.WindTotem_Name}}", // Format: i18n_Items.<last_bit_of_item_id>_<Name/Desc/Recipe>
+					"Description": "{{i18n: i18n_Items.WindTotem_Desc}}",
+					"Texture": "Mods/{{ModId}}/assets/images/WeatherTotems",
+					"Price": 40,
+					"Edibility": -300,
+					// Advanced Info
+					"ContextTags": [
+						// Positive Tags
+						"color_brown",
+						"not_placeable",
+						"totem_item"
+					],
+					"CanBeTrashed": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"CustomFields": {}
+				},
+			}
+		},
+		// --- SpaceCore Object Data ---
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/ObjectExtensionData",
+			"Entries": {
+				// --- Totems ---
+				// Rain Totem
+				"681": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+				// Storm Totem
+				"{{ModId}}_Item.StormTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+				// Sun Totem
+				"{{ModId}}_Item.SunTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+				// Snow Totem
+				"{{ModId}}_Item.SnowTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+				// Wind Totem
+				"{{ModId}}_Item.WindTotem": {
+					"UseForTriggerAction": true,
+					"ConsumeForTriggerAction": true,
+					"CategoryTextOverride": "Weather Totem",
+					"CategoryColorOverride": "{{TotemNameColor}}, 255",
+				},
+			},
+		}
+	]
+}
