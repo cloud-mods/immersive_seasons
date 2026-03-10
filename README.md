@@ -4,8 +4,8 @@
 `immersive_seasons` is a project dedicated to deepening the environmental experience of your game world through dynamic, atmospheric seasonal changes.
 
 ## 🔗 Project Links
-*   **Join the Conversation:** [Discord Thread](https://discord.com)
-*   **Project Tracking:** [Google Sheets](https://docs.google.com)
+*   **Join the Conversation:** [Discord Thread](https://discord.com/channels/137344473976799233/1475222272699666462)
+*   **Project Tracking:** [Google Sheets](https://docs.google.com/spreadsheets/d/1v-WH60_X-fP4EQsfDUefQ5qx54Sbqaa3TmQGJwrOGPg/edit?gid=1767543633#gid=1767543633)
 
 ---
 
