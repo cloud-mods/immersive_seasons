@@ -22,7 +22,6 @@
     ▀▀       ▀▀▀▀    ▀▀    ▀▀  ▀▀▀▀▀▀▀▀  ▀▀   ▀▀▀   ▀▀▀▀▀   
 */
     "DynamicTokens": [
-        /* for immersive seasons, not totems
         { //season phase
             "Name": "Phase",
             "Value": "Early",
@@ -44,7 +43,6 @@
                 "Day": "{{Range: 22, 28}}",
             },
         },
-        */
         { //TOTEM NAME COLOR
             "Name": "TotemNameColor",
             "Value": "44, 32, 138", //just an RBG
@@ -96,6 +94,11 @@
             "LogName": "Triggers",
             "Action": "Include",
             "FromFile": "Assets/Code/Triggers.json"
+        },
+        { //WEATHER
+            "LogName": "Weather... hopefully idk man",
+            "Action": "Include",
+            "FromFile": "Assets/Code/Weather??.json"
         },
         /*
  ▄▄          ▄▄▄▄       ▄▄     ▄▄▄▄▄    
