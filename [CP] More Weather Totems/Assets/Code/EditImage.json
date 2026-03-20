@@ -1,0 +1,57 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		//okay this all works
+		//
+		{ //weird blob thing
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"When": {
+				"Esca.EMP/GameStateQuery: WEATHER Here Wind": "true",
+				"Season": "Summer"
+			},
+			"Priority": "Early",
+			//
+			"FromFile": "Assets/Images/WeatherBlob_SummerWind.png",
+			"ToArea": {
+				"X": 293,
+				"Y": 489,
+				"Width": 28,
+				"Height": 10
+			}
+		},
+		{ //weather icon thing
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"When": {
+				"Esca.EMP/GameStateQuery: WEATHER Here Wind": "true",
+				"Season": "Summer"
+			},
+			"Priority": "Early",
+			"Update": "OnTimeChange",
+			"FromFile": "Assets/Images/WeatherIcon_SummerWind.png",
+			"ToArea": {
+				"X": 341,
+				"Y": 421,
+				"Width": 12,
+				"Height": 8
+			}
+		},
+		{ //weather TV thing
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"When": {
+				"Esca.EMP/GameStateQuery: Spiderbuttons.BETAS_WEATHER_FOR_TOMORROW default Wind": "true",
+				"Season": "Summer"
+			},
+			"Priority": "Early",
+			"FromFile": "Assets/Images/WeatherForcast_SummerWind.png",
+			"ToArea": {
+				"X": 465,
+				"Y": 346,
+				"Width": 52,
+				"Height": 13
+			}
+		},
+	]
+}
