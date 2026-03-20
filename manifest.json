@@ -1,0 +1,26 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  //
+  "Name": "[CP] More Totems",
+  "Author": "HeadInTheClouds and Luminte",
+  "Version": "0.1.0",
+  "Description": "Adds totems for all vanilla weather types.",
+  "UniqueID": "HeadInTheCloudsxLuminte.MoreTotems",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Spiderbuttons.BETAS",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "Esca.EMP",
+      "IsRequired": true
+    }
+  ]
+}
