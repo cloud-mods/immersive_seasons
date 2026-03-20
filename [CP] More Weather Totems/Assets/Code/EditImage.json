@@ -28,7 +28,6 @@
 				"Season": "Summer"
 			},
 			"Priority": "Early",
-			"Update": "OnTimeChange",
 			"FromFile": "Assets/Images/WeatherIcon_SummerWind.png",
 			"ToArea": {
 				"X": 341,
